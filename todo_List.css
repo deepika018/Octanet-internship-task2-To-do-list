@@ -1,0 +1,185 @@
+        /* Google Fonts - Poppins */
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Poppins", sans-serif;
+        }
+        body {
+          background-color: rgb(217, 237, 191);
+        }
+        /* head text  */
+        .header{
+          color: rgb(44, 120, 101) ;
+          opacity: 5;
+          text-align:center ;
+          margin-top: 15px;
+          margin-bottom: 20px;
+        }
+        /* For Scrollbar */
+        
+        /* width */
+        ::-webkit-scrollbar {
+          width: 6px;
+        }
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #080808;
+        }
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          border-radius: 8px;
+          background: #100e0e;
+        }
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #0f0f0f;
+        }
+        
+        .container {
+          position: relative;
+          max-width: 480px;
+          width: 100%;
+          border-radius: 8px;
+          padding: 25px;
+          margin: 85px auto 0;
+          background-color: #ccca;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container .input-field {
+          position: relative;
+          height: 64px;
+          width: 100%;
+        }
+        .input-field textarea {
+          height: 100%;
+          width: 100%;
+          outline: none;
+          font-size: 18px;
+          font-weight: 400;
+          border-radius: 8px;
+          padding: 18px 45px 18px 15px;
+          border: 1px solid #ccc;
+          resize: none;
+        }
+        .input-field textarea:focus {
+          border-color: rgb(103, 63, 105);
+        }
+        textarea::-webkit-scrollbar {
+          display: none;
+        }
+        
+        .input-field .note-icon {
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+          pointer-events: none;
+          font-size: 26px;
+          color: #120000;
+        }
+        .input-field textarea:focus ~ .note-icon {
+          color: rgb(103, 63, 105);
+        }
+        .container .todoLists {
+          max-height: 380px;
+          overflow-y: auto;
+          padding-right: 10px;
+        }
+        .todoLists .list {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          background-color: #f2f2f2;
+          padding: 20px 15px;
+          border-radius: 8px;
+          margin-top: 10px;
+          position: relative;
+          cursor: pointer;
+        }
+        .todoLists .list input {
+          height: 16px;
+          min-width: 16px;
+          accent-color: #4070f4;
+          pointer-events: none;
+        }
+        .todoLists .list .task {
+          margin: 0 30px 0 15px;
+          word-break: break-all;
+        }
+        .list input:checked ~ .task {
+          text-decoration: line-through;
+        }
+        .todoLists .list i {
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+          font-size: 20px;
+          color: #e7dbdb;
+          padding: 5px;
+          opacity: 0.6;
+          display: none;
+        }
+        .todoLists .list:hover i {
+          display: inline-flex;
+        }
+        .todoLists .list i:hover {
+          opacity: 1;
+        }
+        .container .pending-tasks {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 25px;
+        }
+        .pending-tasks .clear-button {
+          padding: 6px 12px;
+          outline: none;
+          border: none;
+          background: #4c76e9;
+          color: #e2bdbd;
+          font-size: 14px;
+          border-radius: 4px;
+          cursor: pointer;
+          pointer-events: none;
+          white-space: nowrap;
+          transition: 0.5s;
+        }
+        .clear-button:hover {
+          background-color: #033fe4;
+        }
+        .foot{
+          color: #383636;
+          text-align: center;
+          margin-top: 20px;
+        
+        
+        }
+        a{
+          text-decoration: none;
+        }
+        mg{
+          color: red;
+          cursor: pointer;
+          
+        
+        }
+        mg:hover{
+          color: #033fe4;
+        }
+        footer {
+          font-family: 'Poppins', sans-serif;
+          color: #fff;
+          padding: 20px 23px;
+          text-align: center;
+      }
+        
+        @media screen and (max-width: 350px) {
+          .container {
+            padding: 25px 15px;
+          }
+        }
+        
